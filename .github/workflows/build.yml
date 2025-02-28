@@ -1,0 +1,23 @@
+name: Build
+
+on: push
+
+jobs:
+  macos-build:
+    name: all versions
+    runs-on: macos-15
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+      - name: Install Java
+        uses: actions/setup-java@v3
+        with:
+          distribution: 'zulu'
+          java-version: 17
+      - name: Build -> Gradle (full project)
+        uses: gradle/gradle-build-action@v2
+        with:
+          arguments: build
+    # сборка iOS иногда стопорится без причины, поэтому была отключена
+    #   - name: Build -> XCode (iOS)
+    #     run: xcodebuild -project "appmodules/app/chronusparsers/ios/chronus parsers.xcodeproj" -scheme app-ios-compose -sdk iphonesimulator -arch x86_64 build

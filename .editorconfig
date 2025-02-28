@@ -1,0 +1,36 @@
+root = true
+
+[*]
+end_of_line = lf
+max_line_length = 120 # default for .kt is 100, for ktlint is 140
+
+[{*.xml,.editorconfig,libs.versions.toml}]
+max_line_length = off
+
+[*.{kt,kts}]
+indent_style = tab
+
+ktlint_standard_annotation=disabled # не переносить аннотации, например @Inject
+
+ktlint_standard_if-else-wrapping=disabled # фикс для discouraged-comment-location
+ktlint_standard_function-naming=disabled # именование Composable в PascalCase
+ktlint_standard_property-naming=disabled # именование MutableSharedFlow с _
+ktlint_standard_comment-wrapping=disabled # не беситься на отключённый через /* */ код
+
+# разрешить написание комментов после строки кода
+ktlint_standard_discouraged-comment-location=disabled
+ktlint_standard_value-parameter-comment=disabled # в датаклассе
+ktlint_standard_value-argument-comment=disabled # в скобках при создании объекта
+ktlint_standard_no-consecutive-comments=disabled # в kdoc
+
+# перенос строк при *fun() = withContext* и фиксы
+ktlint_standard_multiline-expression-wrapping=disabled
+ktlint_standard_string-template-indent=disabled
+ktlint_standard_function-signature=disabled
+
+# всякий кринж из версии 1.3
+ktlint_standard_binary-expression-wrapping=disabled
+ktlint_standard_class-signature=disabled
+ktlint_standard_condition-wrapping=disabled
+ktlint_standard_function-literal=disabled
+ktlint_standard_chain-method-continuation=disabled

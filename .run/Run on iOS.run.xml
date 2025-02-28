@@ -1,0 +1,7 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="Run on iOS" type="KmmRunConfiguration" factoryName="iOS Application" CONFIG_VERSION="1" EXEC_TARGET_ID="bc1aae8fc58e1d391eb16f862077603034e52da6" XCODE_PROJECT="$PROJECT_DIR$/appmodules/app/chronusparsers/ios/chronus parsers.xcodeproj" XCODE_CONFIGURATION="Release" XCODE_SCHEME="app-ios-compose">
+    <method v="2">
+      <option name="com.jetbrains.kmm.ios.BuildIOSAppTask" enabled="true" />
+    </method>
+  </configuration>
+</component>
