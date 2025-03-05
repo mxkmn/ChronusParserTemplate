@@ -1,6 +1,10 @@
-# Шаблон для создания интеграции учебного заведения с приложением [chronus](https://play.google.com/store/apps/details?id=mxkmn.chronus)
+# Шаблон для создания интеграции учебного заведения с приложением chronus
 
-![Картинка для привлечения внимания](static/promo_pic.png)
+![Промо-картинка](static/promo_pic.png)
+
+О преимуществах приложения: [статья на Хабре](https://habr.com/ru/articles/888022)
+
+Скачать приложение: [Google Play](https://play.google.com/store/apps/details?id=mxkmn.chronus)
 
 ## Смогу ли я создать интеграцию со своим учебным заведением?
 
